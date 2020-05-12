@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 //NEED to add +/- logic
 //NEED to add decimal point
 //NEED to add % logic
+//NEED to decide how many decimal places to display
 
     @IBOutlet weak var numberDisplayLabel: UILabel?
     var numberDisplayed: Double = 0
@@ -95,7 +96,6 @@ class ViewController: UIViewController {
             previousNumber = 0
             numberDisplayed = 0
             operation = 0
-
         }
     }
 
