@@ -10,11 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+//NEED to add clearing of numberDisplayLabel after user pushes '=' and types in new number
+//NEED to add +/- logic
+//NEED to add decimal point
+//NEED to add % logic
+    
     @IBOutlet weak var numberDisplayLabel: UILabel?
     var numberDisplayed: Double = 0
     var previousNumber: Double = 0
     var performingMath = false
     var operation = 0
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
 
     @IBAction func numbers(_ sender: UIButton) {
         let tag = sender.tag - 1
@@ -86,12 +97,6 @@ class ViewController: UIViewController {
 
         }
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
 
 }
 
