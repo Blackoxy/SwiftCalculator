@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 //NEED to add +/- logic
 //NEED to add decimal point
 //NEED to add % logic
-    
+
     @IBOutlet weak var numberDisplayLabel: UILabel?
     var numberDisplayed: Double = 0
     var previousNumber: Double = 0
@@ -40,6 +40,7 @@ class ViewController: UIViewController {
             numberDisplayLabel?.text = numberOnScreen + String(tag)
             if let unwrapped = numberDisplayLabel?.text {
                            numberDisplayed = Double(unwrapped)!
+                            //I think there should be a better way to do this than using '!'
                        }
         }
 
